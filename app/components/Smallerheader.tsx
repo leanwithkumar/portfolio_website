@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import Rocket from '../svgfiles/Rocket';
 import Book24 from "../svgfiles/Book24";
 import CoffeeHot from "../svgfiles/CofeeHot";
 import CpuLineDuotone from "../svgfiles/CpuLineDuotone";
