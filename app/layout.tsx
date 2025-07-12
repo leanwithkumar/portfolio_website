@@ -16,8 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-[#090909] text-[#a7a7a7] h-screen overflow-hidden">
-        <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-5 max-w-screen-xl mx-auto h-full">
-          <div className="block lg:hidden p-4 text-center font-semibold text-white rounded-lg mb-4">
+          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pt-4 pb-16 max-w-screen-xl mx-auto h-full">
+          <div className="block lg:hidden p-4 text-center font-semibold text-white rounded-lg ">
             <Smallheader/>
           </div>
 

@@ -6,72 +6,34 @@ import Home10 from "../svgfiles/Home10";
 import ProfileLight from "../svgfiles/Profilelight";
 import Link from "next/link";
 
-export default function Smallheader(){
-    return(
-        <>
-    <div>
-    <div>
-    <div className="flex justify-evenly">
+export default function Smallheader() {
+  return (
+    <div className="w-full">
+      <div className="flex flex-wrap justify-center gap-2 px-2 py-3 rounded-lg shadow-md">
+        <Link href="/" className="p-2">
+          <Home10 size={28} className="text-current" />
+        </Link>
 
-    <div className="px-2">
-    <Link href="/">
-    <Home10 size={30} className="text-current" />
-    </Link>
+        <Link href="/Dashboard" className="p-2">
+          <CpuLineDuotone size={28} className="text-current" />
+        </Link>
+
+        <Link href="/Projects" className="p-2">
+          <CoffeeHot size={28} className="text-current" />
+        </Link>
+
+        <Link href="/Blogs" className="p-2">
+          <Book24 size={28} className="text-current" />
+        </Link>
+
+        <Link href="/About" className="p-2">
+          <ProfileLight size={28} className="text-current" />
+        </Link>
+
+        <Link href="/Contact" className="p-2">
+          <Rocket size={28} className="text-current" />
+        </Link>
+      </div>
     </div>
-
-
-
-
-
-    <div className="px-2">
-    <Link href="/Dashboard">
-    <CpuLineDuotone size={35} className="text-current" />
-    </Link>
-    </div>
-
-
-
-    <div className="px-2">
-    <Link href="/Projects">
-    <CoffeeHot size={35} className="text-current" />
-    </Link>
-
-    </div>
-
-
-
-        <div className="px-2">
-            <Link href="/Blogs">
-        <Book24 size={35} className="text-current" />
-    </Link>
-    </div>
-
-        <div className="px-2">
-        <Link href="/About">
-        <ProfileLight size={35} className="text-current" />
-       </Link>
-
-        </div>
-
-
-   
-
-    <div className="px-2 pt-1">
-        <Link href="/Contact">
-        <Rocket size={30} className="text-current" />
-    </Link>
-
-    </div>
-
-    
-
-    
-
-    
-    
-                </div>
-            </div>
-        </div>
-        </>
-    )
+  );
 }
