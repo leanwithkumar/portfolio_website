@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Blogcard() {
   return (
-    <div className="relative w-[320px] min-h-[400px] rounded-2xl overflow-hidden group shadow-lg border border-slate-700">
+<div className="relative w-[320px] min-h-[400px] rounded-2xl overflow-hidden group shadow-lg border border-slate-700 mx-auto">
       
      
       <div
@@ -17,20 +17,20 @@ export default function Blogcard() {
 
       <div className="relative z-10 text-white p-6 h-full flex flex-col justify-between">
         <div className="flex gap-2 mb-4 flex-wrap">
-          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># Markdown</span>
-          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># Wordpress</span>
+          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># NodeJS</span>
+          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># JavaScript</span>
         </div>
 
         <h3 className="text-lg font-semibold leading-snug hover:underline cursor-pointer mb-2">
-          How to Get Markdown Response from WordPress API
+          Node a runtime environment?
         </h3>
 
         <div className="text-sm text-slate-400 mb-3">
-          March 16, 2024
+          July 12, 2025
         </div>
 
         <p className="text-sm pt-20 text-slate-300 mb-6">
-          Integrating Markdown functionality into WordPress can significantly enhance your content creation...
+          In simple words, it is the run-time environment that allows JavaScript to run in the browser...
         </p>
 
         

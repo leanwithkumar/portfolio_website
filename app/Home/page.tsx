@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Blogcard from "../components/Blogcad";
 import TechCarousel from "../components/TechCarousel";
 import Rocket from "../svgfiles/Rocket";
@@ -9,7 +10,7 @@ export default function Home() {
        
         <div className="border-b">
           <div className="text-3xl font-medium text-white">
-            Hi, I&apos;m Abhay
+            Hi, I&apos;m Abhay <span className="text-4xl">👋</span>
           </div>
           <div className="flex pt-2">
             <div className="pr-5">• Based in Bokaro, India</div>
@@ -29,13 +30,21 @@ export default function Home() {
           <div className="py-5 text-2xl">Latest Article</div>
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2 pr-2 mb-4">
-              <Blogcard />
+            <a
+  href="https://medium.com/@leanwithkumar/node-a-runtime-environment-82e153c66864"
+  target="_blank"
+  rel="noopener noreferrer"
+> <Blogcard /></a>
+             
             </div>
             <div className="w-full lg:w-1/2 pr-2 mb-4 hidden lg:block">
               <Blogcard />
             </div>
           </div>
         </div>
+
+
+
 
         <div className="py-5 border-b">
           <TechCarousel />
@@ -52,9 +61,9 @@ export default function Home() {
         </div>
 
         {/* Contact Section */}
-        <div className="py-5">
+        <div className="py-5 border-b">
           <div>
-            <div className="bg-[#404040] rounded-xl overflow-hidden">
+            <div className="bg-[#404040] rounded-xl overflow-hidden text-white">
               <div className=" p-5">
                 <div className="flex items-center py-2 px-4 h-12 rounded-md transition-colors duration-300 cursor-pointer">
                   <Rocket size={20} className="text-current" />
@@ -64,7 +73,7 @@ export default function Home() {
                  I&apos;m open for freelance projects, feel free to email me to see how can we collaborate.
                 </div>
                 <div className="px-5 hover:underline">
-                    Contact Me
+                  <Link href="/Contact">Contact Me</Link>  
                 </div>
               </div>
             </div>

@@ -8,44 +8,45 @@ export default function About() {
 
   return (
     <>
-      <div>
+      <div className='pb-5'>
         <div>
-          <div className="text-2xl text-white">About</div>
+          <div className="text-white text-2xl border-b py-5">About</div>
           <div className="border-b border-dashed py-5 text-white">
             An insightful glimpse into who I am because every detail adds depth to the canvas of life.
           </div>
 
-          <div className="py-5">
-            <div className="flex justify-evenly gap-4">
-              <button
-                onClick={() => setActiveTab('intro')}
-                className={`bg-[#404040] px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white `}
-              >
-                Intro
-              </button>
-              <button
-                onClick={() => setActiveTab('resume')}
-                className={`bg-[#404040] px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white `}
-              >
-                Resume
-              </button>
-              <button
-                onClick={() => setActiveTab('career')}
-                className={`bg-[#404040] px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white`}
-              >
-                Career
-              </button>
-              <button
-                onClick={() => setActiveTab('education')}
-                className={`bg-[#404040] px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white`}
-              >
-                Education
-              </button>
-            </div>
-          </div>
+       <div className="py-5">
+  <div className="flex flex-col sm:flex-row justify-evenly gap-4">
+    <button
+      onClick={() => setActiveTab('intro')}
+      className="bg-[#404040] px-6 sm:px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white"
+    >
+      Intro
+    </button>
+    <button
+      onClick={() => setActiveTab('resume')}
+      className="bg-[#404040] px-6 sm:px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white"
+    >
+      Resume
+    </button>
+    <button
+      onClick={() => setActiveTab('career')}
+      className="bg-[#404040] px-6 sm:px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white"
+    >
+      Career
+    </button>
+    <button
+      onClick={() => setActiveTab('education')}
+      className="bg-[#404040] px-6 sm:px-10 py-2 rounded-md transition-all cursor-pointer flex-1 text-center hover:text-white"
+    >
+      Education
+    </button>
+  </div>
+</div>
+
 
           
-          <div className="text-white">
+          <div className="">
             {activeTab === 'intro' && (
               <p>
                 Hello! Thanks for stopping by my personal website.<br /><br />
@@ -59,8 +60,8 @@ export default function About() {
               </p>
             )}
 
-            {activeTab === 'resume' && <div>This is my resume.</div>}
-            {activeTab === 'career' && <div>This is my career.</div>}
+            {activeTab === 'resume' && <div>Currently working on by resume will upload by the end of this month.</div>}
+            {activeTab === 'career' && <div>Looking for interns.</div>}
 
 
             {activeTab === 'education' &&

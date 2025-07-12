@@ -1,8 +1,11 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter } from 'next/font/google';
+import { Inter } from "next/font/google";
+import Header from "./components/Header";
+import Smallheader from "./components/Smallerheader";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +15,24 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-[#090909] text-[#a7a7a7]">{children}</body>
+      <body className="bg-[#090909] text-[#a7a7a7] h-screen overflow-hidden">
+        <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-5 max-w-screen-xl mx-auto h-full">
+          <div className="block lg:hidden p-4 text-center font-semibold text-white rounded-lg mb-4">
+            <Smallheader/>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-8 h-full ">
+            {/* Fixed Sidebar */}
+            <div className="hidden lg:block w-full lg:w-1/3 h-full overflow-y-auto sticky top-0 pb-5">
+              <Header />
+            </div>
+
+           <div className="w-full lg:w-2/3 h-full overflow-y-auto hide-scrollbar md:py-10">
+           {children}
+           </div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
