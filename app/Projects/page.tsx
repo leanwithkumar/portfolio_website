@@ -9,7 +9,7 @@ export default function Projects (){
             <div className="text-2xl text-white py-5 border-b">
                 Projects
             </div>
-            <div className="py-5">
+            <div className="py-5 border-b">
                 <div className="py-5">
                     <a
   href="https://juniorme.vercel.app/"

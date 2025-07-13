@@ -42,11 +42,12 @@ export default function About() {
       Education
     </button>
   </div>
+
 </div>
 
 
           
-          <div className="">
+          <div className="pb-5 border-b">
             {activeTab === 'intro' && (
               <p>
                 Hello! Thanks for stopping by my personal website.<br /><br />

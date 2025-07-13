@@ -2,6 +2,7 @@ import Link from "next/link";
 import Blogcard from "../components/Blogcad";
 import TechCarousel from "../components/TechCarousel";
 import Rocket from "../svgfiles/Rocket";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,8 +10,9 @@ export default function Home() {
       <div>
        
         <div className="border-b sm:py-5">
-          <div className="text-3xl font-medium text-white">
-            Hi, I&apos;m Abhay <span className="text-4xl">👋</span>
+          <div className="text-3xl font-medium text-white flex">
+            Hi, I&apos;m Abhay <div className="px-3  "><Image src="/handyyy.svg" alt="React" width={38} height={38} className=""/>
+            </div> 
           </div>
           <div className="flex pt-2">
             <div className="pr-5">• Based in Bokaro, India</div>
