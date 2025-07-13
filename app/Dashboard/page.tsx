@@ -24,7 +24,7 @@ export default function Dashboard() {
             title="Mohit Pandey"
             tags={["SDE-1 @ GI Hitachi"]}
             description="Doesn&apos;t just solve — understands deeply. Calm, focused, and sharp with problem-solving. Truly inspiring to watch him grow."
-            image="/aryan.JPG"
+            image="/mohitsirmentor.png"
           />
           <CollaborationCard
             title="Aryan Sharma"
