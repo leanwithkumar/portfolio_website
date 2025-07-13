@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Smallheader() {
   return (
     <div className="w-full">
-      <div className="flex flex-wrap justify-center gap-2 px-2 py-3 rounded-lg shadow-md">
+      <div className="flex flex-wrap justify-center gap-2 px-2 rounded-lg shadow-md">
         <Link href="/" className="p-2">
           <Home10 size={28} className="text-current" />
         </Link>

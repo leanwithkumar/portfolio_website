@@ -15,21 +15,17 @@ export default function CollaborationCard({
   image,
 }: CollaborationCardProps) {
   return (
-    <div className="relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-md w-[300px] sm:w-[340px] md:w-[360px] h-[450px]">
+    <div className="relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-md w-[300px] sm:w-[340px] md:w-[360px] min-h-[420px]">
       {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          priority // <--- this helps preload the image
-          quality={100}
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-          className="object-cover opacity-80"
-        />
-      </div>
+      <Image
+        src={image}
+        alt={title}
+        fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
+        className="absolute inset-0 z-0 opacity-80 object-cover"
+      />
 
-      {/* Overlay content */}
+      {/* Overlay */}
       <div className="relative z-10 p-4 flex flex-col h-full justify-end bg-gradient-to-t from-black via-black/60 to-transparent text-white">
         {/* Tags */}
         <div className="flex gap-2 mb-2 flex-wrap">

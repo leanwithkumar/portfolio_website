@@ -16,20 +16,20 @@ export default function Dashboard() {
           <CollaborationCard
             title="Kshitij Ranjan"
             tags={["Product Engg @ Pamparazzi"]}
-            description="Known him since childhood—always driven and thoughtful. His clarity, discipline, and focus make him stand out. Excited to see his journey unfold."
-            image="/aryan.jpg"
+            description="Known him since childhood—always a driven and thoughtful person. His clarity, discipline, and focus make him stand out. Excited to see his journey unfold."
+            image="/Kshitij.JPG"
           />
           <CollaborationCard
             title="Mohit Pandey"
             tags={["SDE-1 @ GI Hitachi"]}
-            description="Doesn’t just solve — understands deeply. Calm, focused, and sharp with problem-solving. Truly inspiring to watch him grow."
-            image="/aryan.jpg"
+            description="Doesn&apos;t just solve — understands deeply. Calm, focused, and sharp with problem-solving. Truly inspiring to watch him grow."
+            image="/aryan.JPG"
           />
           <CollaborationCard
             title="Aryan Sharma"
             tags={["Fullstack Developer"]}
             description="Met him in first year, and saw him grow into a focused builder. His curiosity and drive toward building solutions are outstanding."
-            image="/aryan.jpg"
+            image="/aryan.JPG"
           />
           <CollaborationCard
             title="Apurb Mishra"

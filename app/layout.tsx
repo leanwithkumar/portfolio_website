@@ -16,14 +16,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.className}>
       <body className="bg-[#090909] text-[#a7a7a7] h-screen overflow-hidden">
-          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pt-4 pb-16 max-w-screen-xl mx-auto h-full">
-          <div className="block lg:hidden p-4 text-center font-semibold text-white rounded-lg ">
+          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pb-16 max-w-screen-xl mx-auto h-full">
+          <div className="block lg:hidden text-center font-semibold text-white rounded-lg ">
             <Smallheader/>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8 h-full ">
-            {/* Fixed Sidebar */}
-            <div className="hidden lg:block w-full lg:w-1/3 h-full overflow-y-auto sticky top-0 pb-5">
+            
+            <div className="hidden lg:block w-full lg:w-1/3 overflow-y-auto fixed top-0 pb-5">
               <Header />
             </div>
 

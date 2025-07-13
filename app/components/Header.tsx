@@ -12,7 +12,7 @@ export default function Header() {
     <>
 
      <span>
-        <div className=' py-20'>
+        <div className='pt-20'>
         <div className=' px-10 '>
 
         <div>
