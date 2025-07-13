@@ -7,6 +7,7 @@ export default function Dashboard() {
 
       <div className="py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+          
           <CollaborationCard
             title="Samarth Pandey"
             tags={["TKS @ NN Scholar", "Researcher @ Perrin"]}

@@ -22,7 +22,7 @@ export default function CollaborationCard({
         alt={title}
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 360px"
-        className="absolute inset-0 z-0 opacity-80 object-cover"
+        className="absolute inset-0 z-0 opacity-90 object-cover"
       />
 
       {/* Overlay */}

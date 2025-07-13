@@ -15,21 +15,26 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-[#090909] text-[#a7a7a7] ">
-          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pb-16 max-w-screen-xl mx-auto min-h-screen">
+      <body className="bg-[#090909] text-[#a7a7a7] overflow-x-hidden">
+        <div className="px-4 sm:px-6 md:px-20 lg:px-20 max-w-screen-xl mx-auto min-h-screen flex flex-col">
+          
+          {/* Smallheader for mobile */}
           <div className="block lg:hidden text-center font-semibold text-white rounded-lg py-5">
-            <Smallheader/>
+            <Smallheader />
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 h-full ">
+          {/* Main layout */}
+          <div className="flex flex-col lg:flex-row gap-8 flex-1">
             
-            <div className="hidden lg:block w-full lg:w-1/3  sticky top-0 pb-5">
-              <Header />
-            </div>
+            {/* Sidebar */}
+            <div className="hidden lg:block w-full lg:w-1/3 sticky top-0 h-fit overflow-hidden">
+  <Header />
+</div>
 
-           <div className="w-full lg:w-2/3 h-full overflow-y-auto hide-scrollbar md:py-10">
-           {children}
-           </div>
+            {/* Scrollable main content */}
+            <div className="w-full lg:w-2/3 overflow-y-auto hide-scrollbar md:py-10">
+              {children}
+            </div>
           </div>
         </div>
       </body>
