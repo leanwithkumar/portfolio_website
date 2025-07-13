@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <div className="flex flex-col lg:flex-row gap-8 h-full ">
             
-            <div className="hidden lg:block w-full lg:w-1/3 overflow-y-auto fixed top-0 pb-5">
+            <div className="hidden lg:block w-full lg:w-1/3  sticky top-0 pb-5">
               <Header />
             </div>
 

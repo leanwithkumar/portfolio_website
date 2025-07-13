@@ -17,7 +17,7 @@ export default function Dashboard() {
             title="Kshitij Ranjan"
             tags={["Product Engg @ Pamparazzi"]}
             description="Known him since childhood—always a driven and thoughtful person. His clarity, discipline, and focus make him stand out. Excited to see his journey unfold."
-            image="/Kshitij.JPG"
+            image="/bituuuubroooo.jpg"
           />
           <CollaborationCard
             title="Mohit Pandey"
@@ -29,7 +29,7 @@ export default function Dashboard() {
             title="Aryan Sharma"
             tags={["Fullstack Developer"]}
             description="Met him in first year, and saw him grow into a focused builder. His curiosity and drive toward building solutions are outstanding."
-            image="/aryan.JPG"
+            image="/ssharmaaaa.jpg"
           />
           <CollaborationCard
             title="Apurb Mishra"
