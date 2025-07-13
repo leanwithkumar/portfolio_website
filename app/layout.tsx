@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-[#090909] text-[#a7a7a7] h-screen overflow-hidden">
-          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pb-16 max-w-screen-xl mx-auto h-full">
-          <div className="block lg:hidden text-center font-semibold text-white rounded-lg ">
+      <body className="bg-[#090909] text-[#a7a7a7] ">
+          <div className="px-4 sm:px-6 md:px-10 lg:px-20 pb-16 max-w-screen-xl mx-auto min-h-screen">
+          <div className="block lg:hidden text-center font-semibold text-white rounded-lg py-5">
             <Smallheader/>
           </div>
 

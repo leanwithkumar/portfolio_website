@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div>
        
-        <div className="border-b">
+        <div className="border-b sm:py-5">
           <div className="text-3xl font-medium text-white">
             Hi, I&apos;m Abhay <span className="text-4xl">👋</span>
           </div>
