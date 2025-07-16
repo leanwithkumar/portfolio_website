@@ -20,7 +20,7 @@ export default function Projects (){
                 </div>
                 <div className="py-5">
                      <a
-  href="https://medium2-eosin.vercel.app/"
+  href="https://medium2-new.vercel.app/"
   target="_blank"
   rel="noopener noreferrer"
 > 
