@@ -11,7 +11,7 @@ export default function Smallheader() {
     <div className="w-full">
       <div className="flex flex-wrap justify-center gap-2 px-2 rounded-lg shadow-md">
         <Link href="/" className="p-2">
-          <Home10 size={28} className="text-current" />
+          <Home10 size={26} className="text-current" />
         </Link>
 
         <Link href="/Dashboard" className="p-2">
@@ -22,16 +22,16 @@ export default function Smallheader() {
           <CoffeeHot size={28} className="text-current" />
         </Link>
 
-        <Link href="/Blogs" className="p-2">
-          <Book24 size={28} className="text-current" />
+        <Link href="/Blogs" className="pt-3 px-2">
+          <Book24 size={26} className="text-current" />
         </Link>
 
         <Link href="/About" className="p-2">
           <ProfileLight size={28} className="text-current" />
         </Link>
 
-        <Link href="/Contact" className="p-2">
-          <Rocket size={28} className="text-current" />
+        <Link href="/Contact" className="px-2 pt-3">
+          <Rocket size={26} className="text-current" />
         </Link>
       </div>
     </div>

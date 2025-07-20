@@ -2,10 +2,10 @@ import CollaborationCard from "../components/CollaborationCard";
 
 export default function Dashboard() {
   return (
-    <div className="text-white py-5">
+    <div className="text-white py-5 ">
       <div className="text-2xl py-5 border-b">Dashboard</div>
 
-      <div className="py-10">
+      <div className="py-10 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
           
           <CollaborationCard

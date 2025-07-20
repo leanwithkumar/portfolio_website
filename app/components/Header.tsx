@@ -46,7 +46,7 @@ export default function Header() {
     
     <Link href="/">
         <div className="flex items-center py-2 px-4 h-12 hover:bg-[#404040] rounded-md transition-colors duration-300 cursor-pointer">
-        <Home10 size={20} className="text-current" />
+        <Home10 size={19} className="text-current" />
         <span className="px-3 text-gray-200 hover:text-white">Home</span>
         </div>
     </Link>
