@@ -1,4 +1,5 @@
 import Blogcard from "../components/Blogcad";
+import Blogcard2 from "../components/Blogcard2";
 
 export default function Blogs(){
     return(
@@ -14,18 +15,18 @@ export default function Blogs(){
 
   <div className="flex flex-wrap justify-center ">
     <div className="m-4">
-      <Blogcard />
-    </div>
-    <div className=" m-4">
-      <Blogcard />
-    </div>
-  </div>
-   <div className="flex flex-wrap justify-center">
-    <div className="m-4">
-      <Blogcard />
+       <a
+        href="https://medium.com/@leanwithkumar/node-a-runtime-environment-82e153c66864"
+        target="_blank"
+        rel="noopener noreferrer"
+      > <Blogcard /></a>
     </div>
     <div className="m-4">
-      <Blogcard />
+      <a
+        href="https://medium.com/@leanwithkumar/api-api-api-1967f1ca9e13"
+        target="_blank"
+        rel="noopener noreferrer"
+      > <Blogcard2 /></a>
     </div>
   </div>
 

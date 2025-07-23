@@ -3,6 +3,7 @@ import Blogcard from "../components/Blogcad";
 import TechCarousel from "../components/TechCarousel";
 import Rocket from "../svgfiles/Rocket";
 import Image from "next/image";
+import Blogcard2 from "../components/Blogcard2";
 
 export default function Home() {
   return (
@@ -39,9 +40,21 @@ export default function Home() {
 > <Blogcard /></a>
              
             </div>
+
+
+
+
             <div className="w-full lg:w-1/2 pr-2 mb-4 hidden lg:block">
-              <Blogcard />
+               <a
+  href="https://medium.com/@leanwithkumar/api-api-api-1967f1ca9e13"
+  target="_blank"
+  rel="noopener noreferrer"
+> <Blogcard2 /></a>
             </div>
+
+
+
+
           </div>
         </div>
 
