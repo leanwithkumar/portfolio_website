@@ -17,20 +17,20 @@ export default function Blogcard2() {
 
       <div className="relative z-10 text-white p-6 h-full flex flex-col justify-between">
         <div className="flex gap-2 mb-4 flex-wrap">
-          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># NodeJS</span>
-          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># JavaScript</span>
+          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># Backend</span>
+          <span className="bg-[#1e293b] text-sm px-3 py-1 rounded-full text-slate-300"># Server</span>
         </div>
 
         <h3 className="text-lg font-semibold leading-snug hover:underline cursor-pointer mb-2">
-          Node a runtime environment?
-        </h3>
+How web talks from scratch?        </h3>
 
         <div className="text-sm text-slate-400 mb-3">
-          July 12, 2025
+          July 23, 2025
         </div>
 
         <p className="text-sm pt-20 text-slate-300 mb-6">
-          In simple words, it is the run-time environment that allows JavaScript to run in the browser...
+          What actually an API is?
+          Application Programming Interface?Yes that’s correct..
         </p>
 
         
