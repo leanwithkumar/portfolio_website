@@ -2,10 +2,12 @@
 
 import CalCard from "../components/CalCard";
 import EmailForm from "../components/EmailRestAPI";
+import FadeInWhenVisible from "../components/FadeInWhenVisible";
 
 export default function Contact() {
   return (
     <>
+    <FadeInWhenVisible delay={0.1}>
       <div className="pb-5">
         <div className="">
           <div className="text-2xl text-white py-5 border-b">Contact</div>
@@ -93,6 +95,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      </FadeInWhenVisible>
     </>
   );
 }

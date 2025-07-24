@@ -4,10 +4,12 @@ import TechCarousel from "../components/TechCarousel";
 import Rocket from "../svgfiles/Rocket";
 import Image from "next/image";
 import Blogcard2 from "../components/Blogcard2";
+import FadeInWhenVisible from "../components/FadeInWhenVisible";
 
 export default function Home() {
   return (
     <>
+    <FadeInWhenVisible delay={0.1}>
       <div>
        
         <div className="border-b sm:py-5">
@@ -32,31 +34,32 @@ export default function Home() {
         <div className="border-b py-5">
           <div className="py-5 text-2xl">Latest Article</div>
           <div className="flex flex-wrap">
+        
             <div className="w-full lg:w-1/2 pr-2 mb-4">
             <a
-  href="https://medium.com/@leanwithkumar/node-a-runtime-environment-82e153c66864"
-  target="_blank"
-  rel="noopener noreferrer"
-> <Blogcard /></a>
-             
+              href="https://medium.com/@leanwithkumar/node-a-runtime-environment-82e153c66864"
+              target="_blank"
+              rel="noopener noreferrer"> 
+              <Blogcard />
+              </a>
+              </div>
+
+
+
+
+        <div className="w-full lg:w-1/2 pr-2 mb-4 hidden lg:block">
+            <a
+            href="https://medium.com/@leanwithkumar/api-api-api-1967f1ca9e13"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Blogcard2 />
+            </a>
             </div>
-
-
-
-
-            <div className="w-full lg:w-1/2 pr-2 mb-4 hidden lg:block">
-               <a
-  href="https://medium.com/@leanwithkumar/api-api-api-1967f1ca9e13"
-  target="_blank"
-  rel="noopener noreferrer"
-> <Blogcard2 /></a>
-            </div>
-
-
-
-
           </div>
         </div>
+
+       
+        
 
 
 
@@ -95,6 +98,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+    </FadeInWhenVisible>
+
+
+   
+      
     </>
   );
 }

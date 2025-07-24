@@ -1,9 +1,11 @@
 import Blogcard from "../components/Blogcad";
 import Blogcard2 from "../components/Blogcard2";
+import FadeInWhenVisible from "../components/FadeInWhenVisible";
 
 export default function Blogs(){
     return(
         <>
+        <FadeInWhenVisible delay={0.1}>
         <div className="pb-5">
             <div>
                 <div className="text-white text-2xl border-b py-5">
@@ -40,6 +42,7 @@ export default function Blogs(){
                 
             </div>
         </div>
+        </FadeInWhenVisible>
         </>
     )
 }

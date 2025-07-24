@@ -26,7 +26,7 @@ export default function CollaborationCard({
       />
 
       {/* Overlay */}
-      <div className="relative z-10 p-4 flex flex-col h-full justify-end bg-gradient-to-t from-black via-black/60 to-transparent text-white">
+      <div className="relative z-10 p-4 flex flex-col h-full justify-end bg-gradient-to-t from-black via-black/20 to-transparent text-white">
         {/* Tags */}
         <div className="flex gap-2 mb-2 flex-wrap">
           {tags.map((tag, index) => (

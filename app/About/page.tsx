@@ -2,12 +2,14 @@
 
 import { useState } from 'react';
 import EducationItem from '../components/EducationItem';
+import FadeInWhenVisible from '../components/FadeInWhenVisible';
 
 export default function About() {
   const [activeTab, setActiveTab] = useState<'intro' | 'resume' | 'career' | 'education'>('intro');
 
   return (
     <>
+    <FadeInWhenVisible delay={0.1}>
       <div className='pb-5'>
         <div>
           <div className="text-white text-2xl border-b py-5">About</div>
@@ -107,6 +109,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      </FadeInWhenVisible>
     </>
   );
 }

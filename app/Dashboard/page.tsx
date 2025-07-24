@@ -1,7 +1,11 @@
 import CollaborationCard from "../components/CollaborationCard";
+import FadeInWhenVisible from "../components/FadeInWhenVisible";
 
 export default function Dashboard() {
   return (
+    <>
+    <FadeInWhenVisible delay={0.1}>
+   
     <div className="text-white py-5 ">
       <div className="text-2xl py-5 border-b">Dashboard</div>
 
@@ -47,5 +51,7 @@ export default function Dashboard() {
         </div>
       </div>
     </div>
+    </FadeInWhenVisible>
+    </>
   );
 }
