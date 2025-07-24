@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 </div>
 
             {/* Scrollable main content */}
-            <div className="w-full lg:w-2/3 overflow-y-auto hide-scrollbar md:py-10">
+            <div className="w-full lg:w-2/3 overflow-y-auto hide-scrollbar md:py-10 px-5 pb-5">
               {children}
             </div>
           </div>
