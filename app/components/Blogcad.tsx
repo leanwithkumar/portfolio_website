@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Blogcard() {
   return (
-<div className="relative w-[320px] min-h-[400px] rounded-2xl overflow-hidden group shadow-lg border border-slate-700 mx-auto">
+<div className="relative w-[300px] min-h-[400px] rounded-2xl overflow-hidden group shadow-lg border border-slate-700 mx-auto">
       
      
       <div

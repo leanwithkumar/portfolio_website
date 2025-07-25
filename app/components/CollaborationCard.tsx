@@ -15,7 +15,7 @@ export default function CollaborationCard({
   image,
 }: CollaborationCardProps) {
   return (
-    <div className="relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-md w-[300px] sm:w-[340px] md:w-[350px] min-h-[420px]">
+    <div className="relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-md w-[300px] sm:w-[340px] md:w-[300px] min-h-[420px]">
       {/* Background image */}
       <Image
         src={image}

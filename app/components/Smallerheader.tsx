@@ -10,12 +10,12 @@ export default function Smallheader() {
   return (
     <div className="w-full">
       <div className="flex flex-wrap justify-center gap-2 px-2 rounded-lg shadow-md">
-        <Link href="/" className="p-2">
+        <Link href="/" className="p-2 pt-2.5">
           <Home10 size={26} className="text-current" />
         </Link>
 
-        <Link href="/Dashboard" className="p-2">
-          <CpuLineDuotone size={28} className="text-current" />
+        <Link href="/Dashboard" className="pt-2">
+          <CpuLineDuotone size={30} className="text-current" />
         </Link>
 
         <Link href="/Projects" className="p-2">

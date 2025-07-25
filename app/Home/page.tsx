@@ -17,10 +17,13 @@ export default function Home() {
             Hi, I&apos;m Abhay <div className="px-3  "><Image src="/handyyy.svg" alt="React" width={38} height={38} className=""/>
             </div> 
           </div>
-          <div className="flex pt-2">
-            <div className="pr-5">• Based in Bokaro, India</div>
-            <div>• Working remotely</div>
-          </div>
+          
+          <div className="flex flex-col sm:flex-row pt-2 text-sm text-muted-foreground">
+  <div className="before:content-['•'] before:mr-1">Based in Bokaro, India</div>
+  <div className="sm:ml-5 before:content-['•'] before:mr-1 mt-1 sm:mt-0">
+    Working remotely
+  </div>
+</div>
           <div className="py-5">
             Seasoned Software Engineer especially in Web Development, with a
             passion for creating pixel-perfect web experiences. I work with
